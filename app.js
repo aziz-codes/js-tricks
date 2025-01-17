@@ -23,3 +23,8 @@ function eventLoop() {
   });
   console.log("another normal console");
 }
+
+function arthimaticOperation() {
+  console.log("5" + 5); //55
+  console.log("5" - "5"); //0
+}
