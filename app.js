@@ -10,4 +10,16 @@ function toggleNum(num) {
   return obj[num];
 }
 
-console.log(toggleNum(2));
+function eventLoop() {
+  // console orders
+  console.log("normal console");
+
+  setTimeout(() => {
+    console.log("set time out console");
+  }, 0);
+
+  Promise.resolve().then(() => {
+    console.log("promise console");
+  });
+  console.log("another normal console");
+}
