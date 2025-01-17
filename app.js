@@ -28,3 +28,11 @@ function arthimaticOperation() {
   console.log("5" + 5); //55
   console.log("5" - "5"); //0
 }
+
+function truthyFalsy() {
+  console.log(true + false > 0); //true
+  console.log(NaN + false); //Nan
+  console.log(null + undefined); //NaN
+  console.log("" - ""); //0
+  console.log("" + ""); //
+}
